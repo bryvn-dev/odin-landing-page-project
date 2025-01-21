@@ -140,6 +140,7 @@ button:hover {
   padding: 0 0 5px 0;
   color: #1f2937;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 .imageGroup {
@@ -168,8 +169,8 @@ button:hover {
 }
 
 .imageGroup .caption {
+  width: 200px;
   text-align: center;
-  font-weight: 500;
   color: #1f2937;
 }
 
