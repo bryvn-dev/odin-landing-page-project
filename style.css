@@ -1,6 +1,7 @@
 /* General */
 body {
   font-family: Roboto;
+  height: 100%;
 }
 
 ul {
@@ -20,16 +21,17 @@ ul {
 }
 
 .container {
-  padding: 0px 200px 0px 200px;
+  padding: 100px 200px 100px 200px;
 }
 
 /* Header */
 .header {
+  background-color: #1f2937;
+  color: #f9faf8;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 10px 0;
-  margin-bottom: 50px;
+  padding: 10px 200px 0px 200px;
 }
 
 .logo {
@@ -45,7 +47,7 @@ ul {
 .heroBlock {
   display: flex;
   flex-direction: row;
-  flex:auto;
+  flex: auto;
   justify-content: space-between;
   padding: 10px 0;
 }
@@ -53,7 +55,7 @@ ul {
 .heroMainText {
   font-size: 48px;
   font-weight: 900;
-  padding: 0 50px 5px 0;s
+  padding: 0 50px 5px 0;
 }
 
 .heroSecondaryText {
@@ -63,19 +65,114 @@ ul {
 }
 
 .heroImage {
-    margin: 0 0px 0px 50px;
-    height: 200px;
-    width: 500px;
-    flex: 1;
-    object-fit: cover;
-    object-position: center;
+  margin: 0 0px 0px 50px;
+  height: 200px;
+  width: 500px;
+  flex: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
-.heroButton {
+button {
+  background-color: #3882f6;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  padding: 5px 30px;
+  color: inherit;
+}
+
+/* Information Header */
+
+.informationHeader {
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.informationHeader .title {
+    font-size: 36px;
+    font-weight: 900;
+    padding: 0 0 5px 0;
+    color: #1F2937;
+    align-self: center;
+}
+
+.imageGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.imageGroup .caption {
+    text-align: center;
+    font-weight: 500;
+    color: #1F2937;
+}
+
+/* Interesting Quote */
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e5e7eb
+}
+
+.quote .quoteText {
+    font-size: 36px;
+    font-weight: 0;
+    font-style:oblique;
+    padding: 10px 0;
+}
+
+.quote .quoteAuthor {
+    font-size: 18px;
+    font-weight: 900;
+    padding: 0 0 10px 0;
+    align-self:flex-end
+}
+
+/* Call to action */
+.callToAction {
+    display: flex ;
+    justify-content: center;
+}
+
+.callToAction .box {
     background-color: #3882f6;
-    border-radius: 5px;
+    width: 100%;
+    border-radius: 10px;
     border: none;
     margin: 10px;
-    padding: 5px 20px;
-    color: inherit;
+    padding: 50px 150px;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box .text .label {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.box button {
+    border:1px solid #f9faf8;
+}
+
+/* Footer */
+.footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
